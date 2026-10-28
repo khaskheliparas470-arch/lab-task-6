@@ -1,0 +1,22 @@
+//Question2:
+//marks = {
+  //  'Ali': 85,
+  //  'Sara': 95,
+    //'Ahmed': 95,
+    //'Noor': 78
+}
+//Print every student who achieved the highest marks and their marks.
+//Expected toppers: Sara and Ahmed.
+
+marks = {
+    'Ali': 85,
+    'Sara': 95,
+    'Ahmed': 95,
+    'Noor': 78
+}
+
+highest = max(marks.values())
+
+for name, score in marks.items():
+    if score == highest:
+        print(name, score)
