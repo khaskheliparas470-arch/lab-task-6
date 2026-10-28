@@ -1,0 +1,28 @@
+Question3:
+data = {'a': 1, 'b': 2, 'c': 3}
+Create a dictionary where the original values become keys and keys become values.
+Output: {1: 'a', 2: 'b', 3: 'c'}
+Question4:
+Input:
+words = ['apple', 'ant', 'banana', 'ball', 'cat']
+Expected output: 
+{
+    'a': ['apple', 'ant'],
+    'b': ['banana', 'ball'],
+    'c': ['cat']
+}
+Build the dictionary using loops and conditions. 
+
+word_list = ['apple', 'ant', 'banana', 'ball', 'cat']
+
+grouped_words = {}
+
+for item in word_list:
+    first_letter = item[0]
+
+    if first_letter in grouped_words:
+        grouped_words[first_letter].append(item)
+    else:
+        grouped_words[first_letter] = [item]
+
+print(grouped_words)
